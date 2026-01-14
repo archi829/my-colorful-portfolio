@@ -16,6 +16,7 @@ export default {
       fontFamily: {
         display: ["Outfit", "sans-serif"],
         body: ["Space Grotesk", "sans-serif"],
+        cursive: ["Cormorant Garamond", "serif"],
       },
       colors: {
         border: "hsl(var(--border))",

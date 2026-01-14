@@ -28,15 +28,11 @@ const About = () => {
               in AI/ML and Data Science from two of India's premier institutions.
             </p>
 
-            {/* Quick stats */}
-            <div className="grid grid-cols-2 gap-4 pt-4">
-              <div className="p-4 bg-card rounded-2xl shadow-card border border-border">
+            {/* Quick stat */}
+            <div className="pt-4">
+              <div className="inline-block p-4 bg-card rounded-2xl shadow-card border border-border">
                 <div className="text-3xl font-bold text-gradient">8.93</div>
                 <div className="text-sm text-muted-foreground">CGPA at PESU</div>
-              </div>
-              <div className="p-4 bg-card rounded-2xl shadow-card border border-border">
-                <div className="text-3xl font-bold text-gradient">9+</div>
-                <div className="text-sm text-muted-foreground">Major Projects</div>
               </div>
             </div>
           </div>
