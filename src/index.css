@@ -6,112 +6,114 @@
 
 @layer base {
   :root {
-    /* Vibrant colorful palette */
-    --background: 30 100% 98%;
-    --foreground: 270 50% 15%;
+    /* Soft, elegant palette - sage & warm neutrals */
+    --background: 40 30% 97%;
+    --foreground: 220 25% 20%;
 
     --card: 0 0% 100%;
-    --card-foreground: 270 50% 15%;
+    --card-foreground: 220 25% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 270 50% 15%;
+    --popover-foreground: 220 25% 20%;
 
-    /* Coral/Orange primary */
-    --primary: 15 90% 60%;
+    /* Soft sage green primary */
+    --primary: 160 35% 45%;
     --primary-foreground: 0 0% 100%;
 
-    /* Soft pink secondary */
-    --secondary: 330 70% 85%;
-    --secondary-foreground: 270 50% 20%;
+    /* Warm blush secondary */
+    --secondary: 15 45% 93%;
+    --secondary-foreground: 220 25% 25%;
 
-    --muted: 30 30% 92%;
-    --muted-foreground: 270 20% 40%;
+    --muted: 40 20% 94%;
+    --muted-foreground: 220 15% 45%;
 
-    /* Purple accent */
-    --accent: 280 70% 60%;
+    /* Dusty rose accent */
+    --accent: 350 40% 65%;
     --accent-foreground: 0 0% 100%;
 
-    /* Teal highlight */
-    --highlight: 175 70% 45%;
+    /* Soft teal highlight */
+    --highlight: 175 40% 45%;
     --highlight-foreground: 0 0% 100%;
 
-    /* Yellow pop */
-    --pop: 45 100% 60%;
-    --pop-foreground: 270 50% 15%;
+    /* Warm amber pop */
+    --pop: 35 80% 55%;
+    --pop-foreground: 220 25% 15%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 65% 55%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 30 30% 85%;
-    --input: 30 30% 85%;
-    --ring: 15 90% 60%;
+    --border: 40 20% 88%;
+    --input: 40 20% 88%;
+    --ring: 160 35% 45%;
 
     --radius: 1rem;
 
-    /* Gradient definitions */
+    /* Soft gradient definitions */
     --gradient-hero: linear-gradient(135deg, 
-      hsl(15, 90%, 60%) 0%, 
-      hsl(330, 80%, 65%) 50%, 
-      hsl(280, 70%, 60%) 100%);
+      hsl(160, 30%, 50%) 0%, 
+      hsl(175, 35%, 55%) 35%,
+      hsl(200, 40%, 60%) 70%,
+      hsl(220, 35%, 55%) 100%);
     
     --gradient-card: linear-gradient(145deg, 
       hsl(0, 0%, 100%) 0%, 
-      hsl(30, 50%, 98%) 100%);
+      hsl(40, 30%, 98%) 100%);
 
     --gradient-text: linear-gradient(90deg, 
-      hsl(15, 90%, 55%) 0%, 
-      hsl(280, 70%, 55%) 100%);
+      hsl(160, 40%, 40%) 0%, 
+      hsl(200, 45%, 45%) 50%,
+      hsl(350, 35%, 55%) 100%);
 
     --gradient-button: linear-gradient(135deg, 
-      hsl(15, 90%, 60%) 0%, 
-      hsl(330, 80%, 60%) 100%);
+      hsl(160, 35%, 45%) 0%, 
+      hsl(175, 40%, 50%) 100%);
 
-    /* Shadows */
-    --shadow-sm: 0 2px 8px -2px hsl(280 50% 30% / 0.1);
-    --shadow-md: 0 8px 24px -8px hsl(280 50% 30% / 0.15);
-    --shadow-lg: 0 16px 48px -12px hsl(280 50% 30% / 0.2);
-    --shadow-glow: 0 0 40px -10px hsl(15 90% 60% / 0.4);
+    /* Soft shadows */
+    --shadow-sm: 0 2px 8px -2px hsl(220 20% 30% / 0.08);
+    --shadow-md: 0 8px 24px -8px hsl(220 20% 30% / 0.12);
+    --shadow-lg: 0 16px 48px -12px hsl(220 20% 30% / 0.15);
+    --shadow-glow: 0 0 40px -10px hsl(160 40% 50% / 0.3);
   }
 
   .dark {
-    --background: 270 30% 8%;
-    --foreground: 30 50% 95%;
+    --background: 220 25% 10%;
+    --foreground: 40 20% 95%;
 
-    --card: 270 25% 12%;
-    --card-foreground: 30 50% 95%;
+    --card: 220 20% 14%;
+    --card-foreground: 40 20% 95%;
 
-    --popover: 270 25% 12%;
-    --popover-foreground: 30 50% 95%;
+    --popover: 220 20% 14%;
+    --popover-foreground: 40 20% 95%;
 
-    --primary: 15 90% 60%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 160 35% 55%;
+    --primary-foreground: 220 25% 10%;
 
-    --secondary: 280 40% 25%;
-    --secondary-foreground: 30 50% 95%;
+    --secondary: 220 20% 20%;
+    --secondary-foreground: 40 20% 95%;
 
-    --muted: 270 25% 18%;
-    --muted-foreground: 30 20% 60%;
+    --muted: 220 20% 18%;
+    --muted-foreground: 40 15% 60%;
 
-    --accent: 280 70% 60%;
+    --accent: 350 35% 60%;
     --accent-foreground: 0 0% 100%;
 
-    --highlight: 175 70% 45%;
-    --highlight-foreground: 0 0% 100%;
+    --highlight: 175 40% 50%;
+    --highlight-foreground: 220 25% 10%;
 
-    --pop: 45 100% 60%;
-    --pop-foreground: 270 50% 15%;
+    --pop: 35 70% 55%;
+    --pop-foreground: 220 25% 10%;
 
-    --destructive: 0 62.8% 50%;
+    --destructive: 0 55% 45%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 270 25% 20%;
-    --input: 270 25% 20%;
-    --ring: 15 90% 60%;
+    --border: 220 20% 22%;
+    --input: 220 20% 22%;
+    --ring: 160 35% 55%;
 
     --gradient-hero: linear-gradient(135deg, 
-      hsl(280, 50%, 20%) 0%, 
-      hsl(330, 40%, 25%) 50%, 
-      hsl(15, 60%, 30%) 100%);
+      hsl(220, 25%, 15%) 0%, 
+      hsl(200, 30%, 20%) 50%, 
+      hsl(175, 25%, 22%) 100%);
   }
 }
 
