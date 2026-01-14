@@ -6,7 +6,10 @@ const projects = [
     category: "Deep Learning",
     icon: Brain,
     color: "from-primary to-highlight",
-    description: "Multi-task DL model in PyTorch for joint age/gender prediction. Fine-tuned ResNet34 achieving 8.46 RMSE (Age) and 0.91 F1 (Gender).",
+    description: [
+      "Multi-task DL model in PyTorch for joint age/gender prediction",
+      "Fine-tuned ResNet34 achieving 8.46 RMSE (Age) and 0.91 F1 (Gender)",
+    ],
     tags: ["PyTorch", "Computer Vision", "ResNet34"],
   },
   {
@@ -14,7 +17,10 @@ const projects = [
     category: "NLP",
     icon: MessageSquare,
     color: "from-highlight to-primary",
-    description: "Post-hoc debiasing framework for BERT using LoRA (<1% params). Achieved 47% intrinsic bias score and 81.9% accuracy recovery.",
+    description: [
+      "Post-hoc debiasing framework for BERT using LoRA (<1% params)",
+      "Achieved 47% intrinsic bias score and 81.9% accuracy recovery",
+    ],
     tags: ["NLP", "LoRA", "BERT", "PyTorch"],
   },
   {
@@ -22,7 +28,10 @@ const projects = [
     category: "Time-Series ML",
     icon: Clock,
     color: "from-accent/80 to-primary",
-    description: "End-to-end forecasting pipeline for 800+ theaters. Stacking ensemble (RF, XGBoost, LightGBM → Ridge) achieving 0.58 R².",
+    description: [
+      "End-to-end forecasting pipeline for 800+ theaters",
+      "Stacking ensemble (RF, XGBoost, LightGBM → Ridge) achieving 0.58 R²",
+    ],
     tags: ["Time-Series", "XGBoost", "Ensemble"],
   },
   {
@@ -30,7 +39,10 @@ const projects = [
     category: "Generative AI",
     icon: Cpu,
     color: "from-primary to-accent/70",
-    description: "AI clothing analysis pipeline using Gemini and Groq. Simulated consumer personas for style-based product feedback and automated PDF reports.",
+    description: [
+      "AI clothing analysis pipeline using Gemini and Groq",
+      "Simulated consumer personas for style-based product feedback",
+    ],
     tags: ["Gemini", "Groq", "Analytics"],
   },
   {
@@ -38,7 +50,10 @@ const projects = [
     category: "Backend Systems",
     icon: Database,
     color: "from-highlight to-accent/80",
-    description: "MySQL-based order splitting across pharmacies by stock and distance. Doctor verification for restricted medicines with role-based workflows.",
+    description: [
+      "MySQL-based order splitting across pharmacies by stock and distance",
+      "Doctor verification for restricted medicines with role-based workflows",
+    ],
     tags: ["MySQL", "Flask", "Backend"],
   },
   {
@@ -46,7 +61,10 @@ const projects = [
     category: "Causal ML",
     icon: Leaf,
     color: "from-primary/90 to-highlight",
-    description: "Double Machine Learning (EconML) to estimate causal impact of public events on air quality. Identified strong Diwali pollution shock (Z > 25).",
+    description: [
+      "Double Machine Learning (EconML) to estimate causal impact of public events on air quality",
+      "Identified strong Diwali pollution shock (Z > 25)",
+    ],
     tags: ["Causal ML", "EconML", "Analytics"],
   },
 ];
@@ -94,9 +112,14 @@ const Projects = () => {
                 <h3 className="text-xl font-display font-bold mb-3 group-hover:text-gradient transition-all duration-300">
                   {project.title}
                 </h3>
-                <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-                  {project.description}
-                </p>
+                <ul className="text-muted-foreground text-sm leading-relaxed mb-4 space-y-1">
+                  {project.description.map((point, i) => (
+                    <li key={i} className="flex items-start gap-2">
+                      <span className="text-primary mt-1">•</span>
+                      <span>{point}</span>
+                    </li>
+                  ))}
+                </ul>
                 <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag) => (
                     <span

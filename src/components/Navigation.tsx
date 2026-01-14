@@ -54,16 +54,6 @@ const Navigation = () => {
               {link.label}
             </a>
           ))}
-          <a
-            href="mailto:archita.29.jain@gmail.com"
-            className={`px-5 py-2 rounded-full font-semibold transition-all duration-300 hover:scale-105 ${
-              isScrolled
-                ? "bg-primary text-primary-foreground hover:shadow-glow"
-                : "bg-primary-foreground text-foreground"
-            }`}
-          >
-            Hire Me
-          </a>
         </div>
 
         {/* Mobile menu button */}
@@ -91,12 +81,6 @@ const Navigation = () => {
                 {link.label}
               </a>
             ))}
-            <a
-              href="mailto:archita.29.jain@gmail.com"
-              className="mt-2 px-5 py-3 bg-primary text-primary-foreground rounded-full font-semibold text-center"
-            >
-              Hire Me
-            </a>
           </div>
         </div>
       )}
